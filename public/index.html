@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/public/style.css" />
   </head>
   <body>
     <section id="seleccionar-mascota">
@@ -21,18 +21,21 @@
     <section id="ver-mapa">
       <h2 class="subtitulo">Recorre el mapa con tu mokepon</h2>
       <canvas id="mapa"></canvas>
-      <button onmouseup="detenerMovimiento()" onmousedown="moverArriba()">
+      <button ontouchend="detenerMovimiento()" onntouchstart="moverArriba()">
         Arriba
       </button>
 
       <div>
-        <button onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()">
+        <button
+          ontouchend="detenerMovimiento()"
+          ontouchstart="moverIzquierda()"
+        >
           Izquierda
         </button>
-        <button onmouseup="detenerMovimiento()" onmousedown="moverAbajo()">
+        <button ontouchend="detenerMovimiento()" ontouchstart="moverAbajo()">
           Abajo
         </button>
-        <button onmouseup="detenerMovimiento()" onmousedown="moverDerecha()">
+        <button ontouchend="detenerMovimiento()" ontouchstart="moverDerecha()">
           Derecha
         </button>
       </div>
@@ -66,6 +69,6 @@
         </div>
       </div>
     </section>
-    <script src="/js/mokepon.js"></script>
+    <script src="/public/js/mokepon.js"></script>
   </body>
 </html>
